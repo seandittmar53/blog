@@ -1,13 +1,19 @@
 ---
-const today = new Date();
+import Social from '../components/Social.astro'
 ---
-
-<footer>
-	&copy; {today.getFullYear()} YOUR NAME HERE. All rights reserved.
-</footer>
 <style>
 	footer {
-		padding: 25px;
-		text-align: left;
+		display: flex;
+		gap: 1rem;
+		margin-top: 2rem;
 	}
 </style>
+
+<footer>
+	<p>Learn about my projects on 
+	<Social platform="twitter" username="dittmaraz" />
+	<Social platform="github" username="seandittmar53" />
+	<Social platform="youtube" username="seandittmar53" />
+	</p>
+</footer>
+
